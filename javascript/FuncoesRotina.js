@@ -1,5 +1,6 @@
 
 var rex = /[a-z]+/;
+var ligarDesligar = 0;
 
 function sortearNumero() {
 
@@ -65,7 +66,10 @@ function verificarLetraCerOuErra(letra) {
 function PreencheLetra(event) {
 
     var tecla = String.fromCharCode(event.keyCode);
-    if (verificaLetra(tecla) && !verificarLetrasJaDigitadas(tecla)) {
+   if(ligarDesligar == 1){
+
+   
+    if ((verificaLetra(tecla)) && (!verificarLetrasJaDigitadas(tecla)) ) {
 
         if (verificaQuantidadeErros() && verificarLetraCerOuErra(tecla)) {
            
@@ -77,7 +81,8 @@ function PreencheLetra(event) {
             desenharForca();
         }
         
-    }
+    
+    }}
 }
 
 

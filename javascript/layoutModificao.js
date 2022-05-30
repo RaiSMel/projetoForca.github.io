@@ -45,6 +45,8 @@ function comecarJogo() {
     buttonNovoJogo.classList.remove('invisivel');
     buttonDesistir.classList.remove('invisivel');
 
+    ligarDesligar = 1;
+
     resetarObjetos();
 
     DesenhaUnderlineDasLetrasCertas();
@@ -114,6 +116,8 @@ function voltar() {
 
     buttonAdicionar.classList.remove('invisivel');
     buttonIniciar.classList.remove('invisivel');
+
+    ligarDesligar = 0;
 }
 
 

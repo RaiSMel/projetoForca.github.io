@@ -103,7 +103,7 @@ canvas{
 
 #paragrafoResultado{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: boldq;
 }
 /* Formulario */
 
@@ -126,7 +126,7 @@ canvas{
     font-size: large;
 
 }
-#atencao, form p{
+#atencao, #coletarPalavra p{
 display: inline-block;
 margin: 0.7rem 0.7rem 0 0 ;
 }
