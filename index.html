@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+    <link rel="icon" href="imgs/logoNavegador.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="header">
+
+            <a href="https://www.alura.com.br/"><img id="imgLogo" src="imgs/AluraLogo.png" alt="Logo da Alura"></a>
+            <nav>
+                <h1 id="Titulo-Pag">Jogo da forca</h1>
+            </nav>
+
+        </header>
+
+        <main id="main">
+
+            <section id="telas">
+            <canvas></canvas>
+            <div id="telaResultado" class="invisivel"><p id="paragrafoResultado"></p></div>
+            </section>
+            <section class="formulario">
+
+                <form name="ColetarPalavras" id="coletarPalavra">
+
+                    <label class="label-formulario" for="adicionarAsPalavras">Coloque a palavra a ser adicionada</label>
+                    <input name="adicionarAsPalavras" type="text" id="inputComPalavra" maxlength="8">
+                    <div id="atencao">ℹ</div>
+                    <p>Máx. 8 letras</p>
+                </form>
+
+
+            </section>
+
+
+            <section class="bottoes">
+
+                <button id="iniciar" onclick="comecarJogo()">Iniciar Jogo</button>
+
+                <button id="adicionar" onclick="adicionarPalavra()">Adicionar Palavra</button>
+
+                <button id="novoJogo" class="invisivel" onclick="comecarJogo()">Começar novo jogo</button>
+
+                <button id="desistir" class="invisivel" onclick="desistir()">Desistir</button>
+
+                <button id="inserirArray" class="invisivel" onclick="adicionarPalavrasForca()">Confirmar palavra</button>
+
+                <button id="voltar" class="invisivel" onclick="voltar()">Voltar</button>
+
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <section id="Section-rodape">
+
+                <p>© Desenvolvido por Rai com base nos ensinamentos da <a href="https://www.alura.com.br/">Alura</a></p>
+
+                <img id="estante-footer" src="imgs/estante.jpg" alt="Imagem de uma estante">
+                <a href="https://github.com/RaiSMel"><img id="github" src="imgs/github.png" alt="link github na estante"></a>
+                <a href="https://www.linkedin.com/in/rai-mello-762a96168/"><img id="linkedin" src="imgs/linkedin.jpg" alt="link linkedin na estante"></a>
+
+            </section>
+        </footer>
+
+    </div>
+
+
+    <script src="javascript/layoutModificao.js"></script>
+    <script src="javascript/FuncoesRotina.js"></script>
+    <script src="javascript/canvas.js"></script>
+    
+
+</body>
+
+</html>

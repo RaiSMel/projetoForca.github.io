@@ -1,0 +1,251 @@
+#container {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CABEÇALHO DA PÁGINA */
+
+header{
+    grid-area: header;
+    background: url(../imgs/fundoHeaderFooter.jpg) repeat-x;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+}
+
+
+#imgLogo{
+    position: absolute;
+    left: 6px;
+    top: 7px;
+    width: 60px;
+    filter:drop-shadow(1px 1px 10px blue); 
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+#imgLogo:hover{
+    transform: scale(105%);
+}
+
+
+#Titulo-Pag{
+    opacity: 100%;
+    margin-top: -5px;
+    font-size: 3rem;
+    animation: TextoMexendo alternate 3s;
+    
+}
+
+@keyframes TextoMexendo{
+    from{
+        opacity: 0%;
+        transform: translatey(40px);
+    }
+    20%{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+        transform: translatey(0px);
+    }
+}
+
+/* FIM DO CABEÇALHO */
+
+/* CORPO DA PÁGINA */
+
+
+main{
+    background: linear-gradient(white 5%, #999999 40% 60%, white 95%);
+    grid-area: main;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Local do desenho e onde o jogo funciona */
+#telas{
+    margin: 0 auto;
+}
+
+canvas{
+    display: block;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#telaResultado{
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    border-radius: 60px;
+    background: url(../imgs/telaResultado.jpg) 100% no-repeat;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+}
+
+#paragrafoResultado{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* Formulario */
+
+
+.label-formulario{
+    color: black;
+    display: block;
+}
+
+#inputComPalavra{
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background: url(../imgs/fundoHeaderFooter.jpg);
+    height:50px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+
+}
+#atencao, form p{
+display: inline-block;
+margin: 0.7rem 0.7rem 0 0 ;
+}
+#atencao{
+    color: white;
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+}
+
+/* Botôes e suas funcionalidades de aparência */
+
+.bottoes{
+    margin: 400px 0 0 ;
+}
+
+button{ 
+    display: inline;
+    text-align: center;
+    background: url(../imgs/fundoHeaderFooter.jpg);
+    height:50px;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s transform;
+    margin: 20px 10px;
+}
+
+button:hover{
+    filter: blur(5px);
+    transform: scale(110%);
+    filter: drop-shadow(10px 10px 2px #cccccc);
+}
+
+button:active{
+    transform: rotate(5deg);
+    filter:none;
+    filter: drop-shadow(10px 10px 4px gray);
+}
+
+/* FIM DO CORPO */
+
+/* INICIO DO RODAPE */
+
+footer{
+    grid-area: footer;
+    background: url(../imgs/fundoHeaderFooter.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#Section-rodape{
+    text-align: center;
+    line-height: 70px;
+}
+
+footer p{
+    display: inline;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer p a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+}
+
+footer p a:hover{
+    color: #111111;
+    text-decoration: 2px solid #111111 underline;
+}
+
+
+/*estante com itens */
+#github{
+    width: 30px;
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+
+}
+#github:hover{
+    filter: drop-shadow(0 0 20px white);
+    transform: scale(108%);
+}
+
+#linkedin{
+    width: 25px;
+    position: absolute;
+    bottom: 12px;
+    right: 60px;
+
+}
+
+#linkedin:hover{
+    filter: drop-shadow(0 0 20px white);
+    transform: scale(108%);
+}
+
+#estante-footer{
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+    width: 20%;
+    max-width: 120px;
+}
+
+/* fim estante com itens */
+
+/* FIM DO RODAPE */
+
+/* CLASSE PARA DEIXAR ITENS INVISIVEIS */
+
+.invisivel{
+    display: none;
+}
+
+/* FIM DA CLASSE */
