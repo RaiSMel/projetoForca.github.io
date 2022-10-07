@@ -1,12 +1,3 @@
-#container {
-    display: grid;
-    grid-template-columns: 3fr 0.5fr;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: "header header"
-                         "main main"
-                         "footer footer";
-}
-
 *{
     font-family: 'Oswald', sans-serif;
 }
@@ -20,10 +11,10 @@ body {
 /* CABEÇALHO DA PÁGINA */
 
 header{
-    grid-area: header;
     background: url(../imgs/fundoHeaderFooter.jpg) repeat-x;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    height: 80px;
     text-align: center;
 }
 
@@ -71,10 +62,10 @@ header{
 
 main{
     background: linear-gradient(white 5%, #999999 40% 60%, white 95%);
-    grid-area: main;
     padding: 2rem;
     text-align: center;
     justify-content: center;
+    height: 80vh;
 }
 
 /* Local do desenho e onde o jogo funciona */
@@ -175,15 +166,18 @@ button:active{
 /* INICIO DO RODAPE */
 
 footer{
-    grid-area: footer;
     background: url(../imgs/fundoHeaderFooter.jpg);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    height: 90px;
+
 }
 
 #Section-rodape{
+    position: relative;
     text-align: center;
-    line-height: 70px;
+    line-height: 80px;
+    margin: .2rem;
 }
 
 footer p{
@@ -208,7 +202,7 @@ footer p a:hover{
 #github{
     width: 30px;
     position: absolute;
-    bottom: 45px;
+    bottom: 40px;
     right: 20px;
 
 }
@@ -220,7 +214,7 @@ footer p a:hover{
 #linkedin{
     width: 25px;
     position: absolute;
-    bottom: 12px;
+    bottom: 8px;
     right: 60px;
 
 }
@@ -232,7 +226,7 @@ footer p a:hover{
 
 #estante-footer{
     position: absolute;
-    bottom: 7px;
+    bottom: 0px;
     right: 8px;
     width: 20%;
     max-width: 120px;
