@@ -51,6 +51,8 @@ function comecarJogo() {
 
     DesenhaUnderlineDasLetrasCertas();
 
+    document.querySelector("main").style.height = "auto"
+
 }
 
 
@@ -116,6 +118,9 @@ function voltar() {
 
     buttonAdicionar.classList.remove('invisivel');
     buttonIniciar.classList.remove('invisivel');
+
+    document.querySelector("main").style.height = "72vh"
+
 
     ligarDesligar = 0;
 }

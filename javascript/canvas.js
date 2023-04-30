@@ -21,7 +21,6 @@ function DesenhaUnderlineDasLetrasCertas() {
 
         localizacaoX += 30;
 
-        console.log(palavra);
     }
 
     pincel.fillStyle = 'red';

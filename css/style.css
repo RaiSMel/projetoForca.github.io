@@ -65,7 +65,7 @@ main{
     padding: 2rem;
     text-align: center;
     justify-content: center;
-    height: 80vh;
+    height: 72vh;
 }
 
 /* Local do desenho e onde o jogo funciona */
@@ -169,18 +169,17 @@ footer{
     background: url(../imgs/fundoHeaderFooter.jpg);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 90px;
-
 }
 
 #Section-rodape{
-    position: relative;
+    display: flex;
+    align-items: center;
     text-align: center;
-    line-height: 80px;
-    margin: .2rem;
 }
 
 footer p{
+    width: calc(100% - 120px);
+    margin: 0 2rem;
     display: inline;
     font-weight: bold;
     font-size: large;
@@ -199,6 +198,13 @@ footer p a:hover{
 
 
 /*estante com itens */
+#estante{
+    position: relative;
+    width: 120px;
+    height: 80px;
+    place-self: end end;
+}
+
 #github{
     width: 30px;
     position: absolute;
@@ -224,11 +230,10 @@ footer p a:hover{
     transform: scale(108%);
 }
 
-#estante-footer{
+#estante-img{
     position: absolute;
     bottom: 0px;
     right: 8px;
-    width: 20%;
     max-width: 120px;
 }
 
