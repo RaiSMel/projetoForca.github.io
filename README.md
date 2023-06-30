@@ -8,7 +8,7 @@ O Botão iniciar jogo começa o jogo e será sorteada uma das palavras para o jo
 
 [![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://visualstudio.microsoft.com/pt-br/downloads/)
 
-## Tecnologias usadas
+##Tecnologias usadas
 
 [![HTML5](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/default.asp)
 [![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/default.asp)
