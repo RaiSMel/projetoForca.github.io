@@ -2,6 +2,8 @@
 
 <br>
 
+![jogoforca](https://github.com/RaiSMel/projetoForca.github.io/assets/93801960/16b63957-7b4a-4f60-ba06-8f3d41bf4ad0)
+
 O Botão iniciar jogo começa o jogo e será sorteada uma das palavras para o jogo, ao acertar todas as letras uma mensagem de parabéns aparece, ao errar a palavra uma mensagem para tentar de novo aparece, em ambos os casos aparecem as opções de voltar ou iniciar um novo jogo. No menu inicial também é apresentado um botão para adicionar uma palavra a lista de palavras.
 
 ## O projeto foi criado com a IDE
